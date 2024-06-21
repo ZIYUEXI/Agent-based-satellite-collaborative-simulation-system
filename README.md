@@ -40,6 +40,7 @@
 - Unity 项目下载地址：链接：[https://pan.baidu.com/s/1tZimGfWiRtwy375W_sc9lg](https://pan.baidu.com/s/1tZimGfWiRtwy375W_sc9lg) 提取码：gzs4
 
 # English Introduction
+
 This is a satellite collaboration environment trained using the PPO algorithm on Unity. It is an undergraduate graduation project developed using C# and Python, leveraging the Unity ML-Agents framework.
 Video: [https://www.bilibili.com/video/BV1UJ4m1g7KG/?share_source=copy_web&vd_source=6c4e915aa198750e04254d2b74ce1dd1](https://www.bilibili.com/video/BV1UJ4m1g7KG/?share_source=copy_web&vd_source=6c4e915aa198750e04254d2b74ce1dd1)
 
@@ -52,6 +53,29 @@ Video: [https://www.bilibili.com/video/BV1UJ4m1g7KG/?share_source=copy_web&vd_so
 2. Before running, open the chatroom module (Django) and ensure that port 12346 is not occupied.
 3. If you need to save data, prepare a MongoDB and open the data output module, ensuring that port 12345 is not occupied.
 
+## Observations
+| No. | Observation Description                                           | Data Type |
+|-----|-------------------------------------------------------------------|-----------|
+| 1   | Distance (distance)                                               | float     |
+| 2   | XZ Plane Angle (XZAngle)                                          | float     |
+| 3   | XY Plane Angle (XYAngle)                                          | float     |
+| 4   | Velocity (velocity)                                               | float     |
+| 5   | Normalized Velocity XZ Angle (velocitynormalizedXZAngle)          | float     |
+| 6   | Normalized Velocity Vector (normalizedVelocity)                   | Vector3   |
+| 7   | Average Communication Distance (satelliteOrbit.CommunicateDistanceAverage) | float     |
+| 8   | Number of Communications (satelliteOrbit.CommunicateNumber)       | float     |
+| 9   | Distance to Target City (TargetCity_distance)                     | float     |
+| 10  | Distance between Target City and Current Object (Vector3.Distance) | float     |
+| 11  | Target City Position (TargetCityObjectList[CityNumber].transform.position) | Vector3   |
+| 12  | Current Object Position (gameObject.transform.position)           | Vector3   |
+
+## Action Space
+| No. | Action Description                   | Action Range                          |
+|-----|--------------------------------------|---------------------------------------|
+| 1   | Speed Control (speedControl)         | 0: No action, 1: Speed up, 2: Slow down |
+| 2   | Angle Control (angleControl)         | 0: No action, 1: Adjust angle clockwise, 2: Adjust angle counterclockwise |
+| 3   | Orbit Adjustment Flag (adjustOrbitFlag) | 0: No adjustment, 1: Adjust |
+
 ## Download Links
-- Unity project download link: [https://pan.baidu.com/s/1tZimGfWiRtwy375W_sc9lg](https://pan.baidu.com/s/1tZimGfWiRtwy375W_sc9lg) Code: gzs4
+- Unity project download link: [https://pan.baidu.com/s/1tZimGfWiRtwy375W_sc9lg](https://www.baidu.com/s/1tZimGfWiRtwy375W_sc9lg) Code: gzs4
 - Alternative download link: [Google Drive](https://drive.google.com/file/d/1GQ1sJq62SajrnwDkU-QsH73EboySfX2K/view?usp=sharing)
