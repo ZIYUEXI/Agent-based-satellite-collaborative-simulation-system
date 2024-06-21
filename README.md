@@ -11,6 +11,31 @@
 2. 运行前需要先打开聊天室模块 (Django)，确保 12346 端口没有被占用
 3. 如果需要保存数据，需要额外准备一个 MongoDB 并打开数据输出模块，同时确保 12345 端口没有被占用
 
+## 观测值
+| 序号 | 观测值描述                                                       | 数据类型 |
+|------|------------------------------------------------------------------|----------|
+| 1    | 距离（distance）                                                 | float    |
+| 2    | XZ平面角度（XZAngle）                                            | float    |
+| 3    | XY平面角度（XYAngle）                                            | float    |
+| 4    | 速度（velocity）                                                 | float    |
+| 5    | 标准化速度XZ角度（velocitynormalizedXZAngle）                    | float    |
+| 6    | 标准化速度向量（normalizedVelocity）                             | Vector3  |
+| 7    | 平均通信距离（satelliteOrbit.CommunicateDistanceAverage）         | float    |
+| 8    | 通信数量（satelliteOrbit.CommunicateNumber）                     | float    |
+| 9    | 目标城市距离（TargetCity_distance）                              | float    |
+| 10   | 目标城市与当前物体位置的距离（Vector3.Distance）                | float    |
+| 11   | 目标城市位置（TargetCityObjectList[CityNumber].transform.position）| Vector3  |
+| 12   | 当前物体位置（gameObject.transform.position）                    | Vector3  |
+
+## 动作空间
+| 序号 | 动作描述                        | 动作范围          |
+|------|--------------------------------|-------------------|
+| 1    | 速度控制（speedControl）        | 0: 无动作，1: 加速，2: 减速 |
+| 2    | 角度控制（angleControl）        | 0: 无动作，1: 顺时针调整角度，2: 逆时针调整角度 |
+| 3    | 轨道调整标志（adjustOrbitFlag） | 0: 不调整，1: 调整 |
+
+如果有其他需要补充的信息，请告诉我。
+
 ## 下载地址
 - Unity 项目下载地址：链接：[https://pan.baidu.com/s/1tZimGfWiRtwy375W_sc9lg](https://pan.baidu.com/s/1tZimGfWiRtwy375W_sc9lg) 提取码：gzs4
 
