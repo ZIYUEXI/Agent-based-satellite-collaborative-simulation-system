@@ -1,0 +1,58 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    background: #333;
+    color: white;
+    padding: 20px;
+}
+.top-bar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px; /* 与标题间的距离 */
+}
+.select-box {
+    width: 10%; /* 控制下拉框的宽度 */
+    padding: 8px;
+    margin: 0 auto; /* 水平居中 */
+    background: #444; /* 和卡片背景颜色一致 */
+    color: white; /* 字体颜色 */
+    border: none; /* 去除边框 */
+    border-radius: 5px; /* 圆角边框 */
+    outline: none; /* 去除焦点边框 */
+}
+.header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+h1 {
+    font-size: 2em; /* 增大标题字体 */
+}
+.card {
+    flex: 1 1 200px;
+    margin: 10px;
+    padding: 20px;
+    background: #444;
+    border-radius: 10px;
+}
+.card h2 {
+    margin-top: 0;
+}
+@media (max-width: 600px) {
+    .dashboard {
+flex-direction: column;
+    }
+    .top-bar, .header {
+text-align: center;
+    }
+    .select-box {
+width: 50%; /* 移动设备适应性调整 */
+    }
+}
