@@ -9,7 +9,7 @@
 2. 运行前需要先打开聊天室模块(Django)确保12346端口没有被占用
 3. 如果需要保存数据那么需要额外准备一个mongoDB并打开数据输出模块同时确保12345端口没有被占用
 ## 下载地址
-- Unity项目下载地址：链接：https://pan.baidu.com/s/12cRmo3aKhKp3RPETZmnEgw 提取码：h0m4 
+- Unity项目下载地址：链接：https://pan.baidu.com/s/1tZimGfWiRtwy375W_sc9lg 提取码：gzs4 
 # English
 This is a satellite collaboration environment trained using the PPO algorithm on Unity.
 https://drive.google.com/file/d/1kTt6VtDOVQIdXSGVsd6lpwMk-E0u1EUb/view?usp=sharing
